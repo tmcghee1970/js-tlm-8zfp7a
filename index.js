@@ -56,3 +56,24 @@ for(let key of Object.keys(circle))
 for(let entry of Object.entries(circle))
   console.log(entry);
 
+//cloning an object
+const another = {};
+
+for(let key in circle)
+  another[key] = circle[key];
+
+console.log(another);
+
+//better way
+const another2 = Object.assign({}, circle);
+
+console.log(another2);
+
+//simpliest way to clone a object
+const another3 = { ...circle };
+
+console.log(another3);
+
+
+//Garbage Collection
+//happens automatically
