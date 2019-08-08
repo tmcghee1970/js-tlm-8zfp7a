@@ -39,3 +39,20 @@ console.log(obj);
 //Objects are copied by their reference
 
 
+//Enumerating Properties of an Object
+const circle = {
+  radius: 1,
+  draw() {
+    console.log('draw method');
+  }
+};
+
+for(let key in circle)
+  console.log(key, circle[key]);
+
+for(let key of Object.keys(circle))
+  console.log(key);
+
+for(let entry of Object.entries(circle))
+  console.log(entry);
+
