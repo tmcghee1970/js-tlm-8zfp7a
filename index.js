@@ -99,3 +99,20 @@ const date2 = new Date(2018, 4, 11, 9);
 console.log(now);
 console.log(date1);
 console.log(date2);
+
+//street
+//city
+//zipCode
+
+let address = {
+  street: 'a',
+  city: 'b',
+  zipCode: 'c'
+};
+
+function showAddress(address) {
+  for(let key in address)
+  console.log(key, address[key]);
+}
+
+showAddress(address);
