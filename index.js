@@ -77,3 +77,25 @@ console.log(another3);
 
 //Garbage Collection
 //happens automatically
+
+//Templated Literals `` (ES6)
+const another10 = `This is my 
+'first' message`;
+
+console.log(another10);
+
+const name = 'John';
+const message = `Hi ${name},
+
+Thank you for joining my mailist list`;
+
+console.log(message);
+
+//Date
+const now = new Date(); //current datetime
+const date1 = new Date('May 11 2019 09:00');
+const date2 = new Date(2018, 4, 11, 9);
+
+console.log(now);
+console.log(date1);
+console.log(date2);
